@@ -1,0 +1,22 @@
+{
+    "name": "intega3/template",
+    "type": "typo3-flow-package",
+    "description": "Intega3 OpenSource Intranet System - Default template package",
+    "authors": [
+        {
+            "name": "Martin Tepper",
+            "email": "martintepper@dev-mt.de ",
+            "role": "Founder"
+        }
+    ],
+    "require": {
+        "intega3/core": "*",
+        "typo3/flow": "3.0.*",
+        "typo3/party": "3.0.*"
+    },
+    "autoload": {
+        "psr-0": {
+            "Intega3\\Core": "Classes"
+        }
+    }
+}
