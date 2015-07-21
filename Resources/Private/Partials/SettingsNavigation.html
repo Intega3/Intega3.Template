@@ -3,33 +3,33 @@
         <f:security.ifHasRole role="User">
             <f:then>
                 <li>
-                    <f:link.action action="index" controller="Settings"><f:translate id="settings.index" locale="{langDetector.language}" package="Intega3.Template" /></f:link.action>
+                    <f:link.action action="index" controller="Settings"><f:translate id="settings.index" locale="{langDetector.language}" package="Intega3.Locale" /></f:link.action>
                     <ul>
                         <li>
-                            <f:link.action action="messages" controller="Settings"><f:translate id="settings.messages" locale="{langDetector.language}" package="Intega3.Template" /></f:link.action>
+                            <f:link.action action="messages" controller="Settings"><f:translate id="settings.messages" locale="{langDetector.language}" package="Intega3.Locale" /></f:link.action>
                         </li>
                         <li>
-                            <f:link.action action="user" controller="Settings"><f:translate id="settings.user" locale="{langDetector.language}" package="Intega3.Template" /></f:link.action>
+                            <f:link.action action="user" controller="Settings"><f:translate id="settings.user" locale="{langDetector.language}" package="Intega3.Locale" /></f:link.action>
                         </li>
                     </ul>
                 </li>
                 <f:security.ifHasRole role="Admin">
                     <f:then>
                         <li>
-                            <f:link.action action="index" controller="Administration"><f:translate id="system.intega" locale="{langDetector.language}" package="Intega3.Template" /></f:link.action>
+                            <f:link.action action="index" controller="Administration"><f:translate id="system.intega" locale="{langDetector.language}" package="Intega3.Locale" /></f:link.action>
                             <ul>
                                 <li>
-                                    <f:link.action action="configuration" controller="Administration"><f:translate id="administration.configuration" locale="{langDetector.language}" package="Intega3.Template" /></f:link.action>
+                                    <f:link.action action="configuration" controller="Administration"><f:translate id="administration.configuration" locale="{langDetector.language}" package="Intega3.Locale" /></f:link.action>
                                 </li>
                                 <li>
-                                    <f:link.action action="listUsers" controller="Administration"><f:translate id="administration.users" locale="{langDetector.language}" package="Intega3.Template" /></f:link.action>
+                                    <f:link.action action="listUsers" controller="Administration"><f:translate id="administration.users" locale="{langDetector.language}" package="Intega3.Locale" /></f:link.action>
                                 </li>
                             </ul>
                         </li>
                     </f:then>
                 </f:security.ifHasRole>
                 <li>
-                    <f:link.action action="logout" controller="Login"><f:translate id="logout" locale="{langDetector.language}" package="Intega3.Template" /></f:link.action>
+                    <f:link.action action="logout" controller="Login"><f:translate id="logout" locale="{langDetector.language}" package="Intega3.Locale" /></f:link.action>
                 </li>
             </f:then>
             <f:else>

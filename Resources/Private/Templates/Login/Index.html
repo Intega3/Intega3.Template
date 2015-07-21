@@ -1,29 +1,29 @@
-<f:layout name="Default" />
+<f:layout name="Public" />
 
-<f:section name="Title"><f:translate id="header.login" locale="{langDetector.language}" package="Intega3.Template" /></f:section>
+<f:section name="Title"><f:translate id="header.login" locale="{langDetector.language}" package="Intega3.Locale" /></f:section>
  
 <f:section name="Content">
     <f:flashMessages />
 
     <f:security.ifHasRole role="User">
         <f:then>
-            <f:link.action action="logout" controller="Login"><f:translate id="logout" locale="{langDetector.language}" package="Intega3.Template" /></f:link.action>
+            <f:link.action action="logout" controller="Login"><f:translate id="logout" locale="{langDetector.language}" package="Intega3.Locale" /></f:link.action>
         </f:then>
         <f:else>
             <f:form action="authenticate" method="post" name="loginform">
             	<fieldset>
-            		<legend><f:translate id="form.login" locale="{langDetector.language}" package="Intega3.Template" /></legend>
+            		<legend><f:translate id="form.login" locale="{langDetector.language}" package="Intega3.Locale" /></legend>
             		
             		<p>
-            			<label for="username"><f:translate id="username" locale="{langDetector.language}" package="Intega3.Template" />:</label>
+            			<label for="username"><f:translate id="username" locale="{langDetector.language}" package="Intega3.Locale" />:</label>
             			<f:form.textfield id="username" name="__authentication[TYPO3][Flow][Security][Authentication][Token][UsernamePassword][username]" />
             		</p>
 	                <p>
-	                	<label for="password"><f:translate id="password" locale="{langDetector.language}" package="Intega3.Template" />:</label>
+	                	<label for="password"><f:translate id="password" locale="{langDetector.language}" package="Intega3.Locale" />:</label>
 	                	<f:form.password id="password" name="__authentication[TYPO3][Flow][Security][Authentication][Token][UsernamePassword][password]" />
 	                </p>
 	                <p>
-	                	<f:form.submit value="{f:translate(id:'login' locale:langDetector.language package:'Intega3.Template')}" />
+	                	<f:form.submit value="{f:translate(id:'login' locale:langDetector.language package:'Intega3.Locale')}" />
 	                </p>
                 </fieldset>
             </f:form>
