@@ -12,8 +12,7 @@
         }
     ],
     "require": {
-        "intega3.locale": "0.0.*",
-        "components/font-awesome": "4.3.0",
+        "intega3.locale": "@dev",
         "typo3/fluid": "3.0.*"
     }
 }
