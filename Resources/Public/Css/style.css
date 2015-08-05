@@ -1,0 +1,53 @@
+.flashmessages {
+    list-style: outside none none;
+    margin: 5px auto 0 auto;
+    width: 280px;
+}
+.flashmessages-error,
+.flashmessages-success {
+    padding: 10px;
+    margin-bottom: 3px;
+}
+.flashmessages-error {
+    border: 1px solid red;
+    background-color: #EA7E7E;
+}
+
+.flashmessages-ok {
+    border: 1px solid green;
+    background-color: #87EA7E;
+}
+
+.loginbox {
+    margin: 50px auto;
+}
+
+
+.mdl-layout__drawer .mdl-navigation ul {
+    list-style: outside none none;
+    padding: 0;
+}
+
+.mdl-layout__drawer .mdl-navigation ul ul {
+    background-color: #44545B;
+}
+.mdl-layout__drawer .mdl-navigation ul ul .mdl-navigation__link {
+    padding: 10px 40px 10px 40px;
+}
+
+.mdl-layout-logo p {
+    display: inline;
+}
+
+.demo-drawer .mdl-menu__container:not(.is-visible) {
+    top: 0 !important;
+    width: 0 !important;
+    height: 0 !important;
+    overflow: hidden;
+}
+
+@media screen and (max-width:600px){
+    .mdl-layout-logo p {
+        display: none;
+    }
+}

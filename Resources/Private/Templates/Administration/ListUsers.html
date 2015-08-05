@@ -3,10 +3,17 @@
 <f:section name="Title"><f:translate id="administration.users" locale="{langDetector.language}" package="Intega3.Locale" /></f:section>
 
 <f:section name="Content">
+    <div class="mdl-color--white mdl-shadow--2dp mdl-cell mdl-cell--12-col">
 	<f:if condition="{accounts}">
         <f:then>
-            <f:link.action action="createUser"><i class="fa fa-user-plus"></i> Create account</f:link.action>
             <h2>Account list</h2>
+            
+            <f:link.action action="createUser">
+                <i role="presentation" class="material-icons">add_box</i>
+                Create account
+            </f:link.action>
+            <br><br>
+            
             <table class="table">
                 <tr>
                     <th>Username</th>
@@ -30,7 +37,7 @@
                                 <f:form.hidden name="account" value="{account}" />
 
                                 <f:form.button>
-                                    <i class="fa fa-edit"></i>
+                                    <i role="presentation" class="material-icons">create</i>
                                 </f:form.button>
                             </f:form>
                             
@@ -38,7 +45,7 @@
                                 <f:form.hidden name="account" value="{account}" />
 
                                 <f:form.button>
-                                    <i class="fa fa-user-times"></i>
+                                    <i role="presentation" class="material-icons">delete</i>
                                 </f:form.button>
                             </f:form>
                         </td>
@@ -50,4 +57,5 @@
             <p>No accounts registered yet.</p>
         </f:else>
     </f:if>
+    </div>
 </f:section>
