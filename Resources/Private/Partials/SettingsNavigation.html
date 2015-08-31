@@ -1,6 +1,6 @@
 <nav class="demo-navigation mdl-navigation mdl-color--blue-grey-800">
   <ul>
-        <f:security.ifHasRole role="User">
+        <f:security.ifHasRole role="Intega3.Core:User">
             <f:then>
                 <li>
                     <f:link.action action="index" controller="Dashboard" class="mdl-navigation__link">
@@ -28,7 +28,7 @@
                         </li>
                     </ul>
                 </li>
-                <f:security.ifHasRole role="Admin">
+                <f:security.ifHasRole role="Intega3.Core:Admin">
                     <f:then>
                         <li>
                             <f:link.action action="index" controller="Administration" class="mdl-navigation__link"><f:translate id="system.intega" locale="{langDetector.language}" package="Intega3.Locale" /></f:link.action>

@@ -43,7 +43,7 @@
   </head>
   <body>
       
-    <div class="demo-layout mdl-layout mdl-js-layout <f:security.ifHasRole role="User">mdl-layout--fixed-drawer</f:security.ifHasRole> mdl-layout--fixed-header">
+    <div class="demo-layout mdl-layout mdl-js-layout <f:security.ifHasRole role="Intega3.Core:User">mdl-layout--fixed-drawer</f:security.ifHasRole> mdl-layout--fixed-header">
       <header class="demo-header mdl-layout__header mdl-color--white mdl-color--grey-100 mdl-color-text--grey-600">
         <div class="mdl-layout__header-row">
           <span class="mdl-layout-title"><f:render section="Title" /></span>
@@ -53,7 +53,7 @@
               <p>Intega3 - OpenSource Enterprise System</p>
           </div>
           <div class="mdl-layout-spacer"></div>
-            <f:security.ifHasRole role="User">
+            <f:security.ifHasRole role="Intega3.Core:User">
               <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
                 <label class="mdl-button mdl-js-button mdl-button--icon" for="search">
                   <i class="material-icons">search</i>
@@ -75,7 +75,7 @@
           </div>
       </header>
       
-      <f:security.ifHasRole role="User">
+      <f:security.ifHasRole role="Intega3.Core:User">
           <div class="demo-drawer mdl-layout__drawer mdl-color--blue-grey-900 mdl-color-text--blue-grey-50">
             <header class="demo-drawer-header">
               <img src="<f:uri.resource path='Images/Content/user.jpg' package='Intega3.Template' />" class="demo-avatar">
@@ -101,7 +101,7 @@
       
       <main class="mdl-layout__content mdl-color--grey-100">
           <f:flashMessages class="flashmessages" />
-          
+
           <div class="mdl-grid demo-content">
             <f:render section="Content" />
           </div>
